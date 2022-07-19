@@ -75,11 +75,12 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-'''
+
+
 DATABASES = {
     'default' : dj_database_url.config()
 }
-'''
+
 '''
 DATABASES = {
     'default': {
@@ -92,18 +93,6 @@ DATABASES = {
     }
 }
 '''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd2hlgthut1us2f',
-        'USER' : 'pqakglnertllif',
-        'PASSWORD' : 'b53c8b5100b2e9183e9354dd035a9f8469f4fd2d9c92522b50781d0a399d6637',
-        'HOST' : 'ec2-54-87-179-4.compute-1.amazonaws.com',
-        'PORT' : '5432',
-        'URI' : 'postgres://pqakglnertllif:b53c8b5100b2e9183e9354dd035a9f8469f4fd2d9c92522b'
-        + '50781d0a399d6637@ec2-54-87-179-4.compute-1.amazonaws.com:5432/d2hlgthut1us2f',
-    }
-}
 
 
 # Password validation
