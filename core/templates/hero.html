@@ -1,0 +1,38 @@
+{% load static %}
+<!-- Hero Area Start -->
+<div id="hero-area" class="hero-area-bg">
+
+    <div class="container">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    <button type="button" class="close" data-dismiss="alert"></button>
+                    <strong>{{ message }}</strong>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="container">      
+        <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <div class="contents">
+            <h2 class="head-title">Acreditamos num futuro melhor para você!</h2>
+            <p>Você irá longe. Junto da Fusion você consegue atingir seus sonhos. Acreditamos em você, para que assim possamos vencer junstos. Quando você ganha, nós também ganhamos. Acreditamos sempre em você.</p>
+            <div class="header-button">
+                <a href="#services" class="btn btn-common">Saiba mais</i></a>
+                <a href="#contact" class="btn btn-border video-popup">Entre em contato!</i></a>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <div class="intro-img">
+            <img class="img-fluid" src="{% static 'img/intro-mobile.png' %}" alt="">
+            </div>            
+        </div>
+        </div> 
+    </div> 
+</div>
+<!-- Hero Area End -->
+</header>
+<!-- Header Area wrapper End -->
