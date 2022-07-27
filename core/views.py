@@ -14,8 +14,6 @@ class IndexView(FormView):
         
         context['servicos'] = Servico.objects.order_by('?').all()
 
-        #features1 = Feature.objects.all()[:3]
-        #features2 = Feature.objects.all()[3:6]
         context['features1'] = Feature.objects.all()[:3]
         context['features2'] = Feature.objects.all()[3:6]
 

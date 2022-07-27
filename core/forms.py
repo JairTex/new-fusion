@@ -1,4 +1,3 @@
-import email
 from django import forms
 from django.core.mail import EmailMessage
 
